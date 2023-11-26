@@ -1,20 +1,4 @@
-/*document.addEventListener(
-    "contextmenu",
-    (e) => {
-        e.preventDefault();
-    },
-    false
-);
 
-document.addEventListener(
-    "copy",
-    (e) => {
-        e.preventDefault();
-    },
-    false
-);*/
-
-// Get the button
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
 

@@ -20,6 +20,11 @@
     background: none;
 }
 
+.info {
+    user-select: text;
+    -ms-user-select: auto;
+}
+
 :rootx {
     --body: #526D82;
     --cardheader: #9DB2BF;
@@ -245,7 +250,7 @@ a.nav-link:hover {
 .totop {
     display: none;
     cursor: pointer;
-    position: fixed; 
+    position: fixed;
     bottom: 20px;
     right: 35px;
     z-index: 99;
@@ -256,7 +261,8 @@ a.nav-link:hover {
     background-color: var(--bullet);
     border: none;
     color: white !important;
-  }
+}
+
 
 @media (max-width: 768px) {
     #left-column {
@@ -307,7 +313,7 @@ a.nav-link:hover {
         padding-right: 50px !important;
     }
 
-    .totop{
+    .totop {
         right: 15px;
     }
 
