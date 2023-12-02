@@ -6,10 +6,10 @@ document.write(`<div id="container">
   </svg></button>
   <div id="left-column" class="col-md-4">
     <div class="imgcon">
-      <h4 class="mt-3"><a class="navbar-brand normal" href="index.html">MISCELLANY89</a></h4>
+      <h4 class="mt-3"><a class="navbar-brand normal" href="home.html">MISCELLANY89</a></h4>
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-          <h2><a class="navbar-brand mobile" href="index.html">MISCELLANY89</a></h2>
+          <h2><a class="navbar-brand mobile" href="home.html">MISCELLANY89</a></h2>
           <button class="navbar-toggler mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -90,8 +90,8 @@ const currentUrl = window.location.pathname;
 let page;
 
 switch (true) {
-    case currentUrl.includes('index'):
-        page = 'index';
+    case currentUrl.includes('home'):
+        page = 'home';
         break;
     case currentUrl.includes('about'):
         page = 'about';
@@ -105,7 +105,7 @@ switch (true) {
 }
 
 switch (page) {
-    case 'index':
+    case 'home':
       var div = document.getElementsByClassName('contents')
       div[0].innerHTML = `
       <div id="posts-container"></div>
