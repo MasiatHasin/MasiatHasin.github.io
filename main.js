@@ -1,66 +1,487 @@
+document.write(`<div id="container">
+<button class="totop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+    class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd"
+      d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
+  </svg></button>
+  <div id="left-column" class="col-md-4">
+    <div class="imgcon">
+      <h4 class="mt-3"><a class="navbar-brand normal" href="index.html">MISCELLANY89</a></h4>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <h2><a class="navbar-brand mobile" href="index.html">MISCELLANY89</a></h2>
+          <button class="navbar-toggler mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html">ARTICLES</a>
+              </li>
 
-    const button = document.querySelector('.totop');
-    console.log(button);
+              <div class="normal mobile">
+                <li class="nav-item">
+                  <a class="nav-link empty" href="#">
+                    <p> </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link empty" href="#">
+                    <p> </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link empty" href="#">
+                    <p> </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link empty" href="#">
+                    <p> </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link empty" href="#">
+                    <p> </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link empty" href="#">
+                    <p> </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link empty" href="#">
+                    <p> </p>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <span style="color: var(--ascents); font-size: 12px;" class="info"><svg xmlns="http://www.w3.org/2000/svg"
+        width="12" height="12" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+        <path
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
+      </svg> Mashiat Hasin <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+        class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+        <path
+          d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+        <path
+          d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+      </svg> masiathasin@gmail.com</span>
+  </div>
 
-    const scrollingColumn = document.querySelector('.right-column');
+<div id="right-column" class="col-md-8 contents">
+</div>`);
 
-    const displayButton = () => {
-        scrollingColumn.addEventListener('scroll', () => {
-            const scrollY = scrollingColumn.scrollTop;
+const currentUrl = window.location.pathname;
+let page;
 
-            console.log('Scroll Y:', scrollY);
+switch (true) {
+    case currentUrl.includes('index'):
+        page = 'index';
+        break;
+    case currentUrl.includes('about'):
+        page = 'about';
+        break;
+    case currentUrl.includes('portfolio'):
+        page = 'portfolio';
+        break;
+    default:
+        page = 'unknown';
+        break;
+}
 
-            if (scrollY > 100) {
-                button.style.display = "block";
-            } else {
-                button.style.display = "none";
-            }
-        });
-    };
+switch (page) {
+    case 'index':
+      var div = document.getElementsByClassName('contents')
+      div[0].innerHTML = `
+      <div id="posts-container"></div>
+      <div class="card">
+        <div class="card-header">NEWS</div>
+        <div class="card-body">
+          <span style="font-size:16px">Uploads ✽ 25.11.2023</span>
+          <div class="row mt-2">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-header">ABOUT</div>
+                <div class="card-body preview">
+                  Hi, I'm Mashiat Hasin Rodoshi. I'm a recent CSE graduate from BRAC University and am open to work.
+                  I've been
+                  very interested in web development since high school
+                </div>
+                <div>
+                  <a href="about.html"><button class="read-more-button">Read More</button></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-header">PORTFOLIO</div>
+                <div class="card-body preview">
+                  <div class="image-container"><img class="badges"
+                      src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&amp;logo=php&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white">
+                  </div>
+                  <b style="color: var(--bullet)">Healthcare Resources</b> is a web application that can track, reserve,
+                  and manage hospital beds in real time
+                </div>
+                <div>
+                  <a href="portfolio.html"><button class="read-more-button">Read More</button></a>
+                </div>
+              </div>
+            </div>
+    
+    
+          </div>
+        </div>
+      </div>
+    </div>`
+        break;
+    case 'about':
+      var div = document.getElementsByClassName('contents')
+      div[0].innerHTML = `
+      <div id="posts-container"></div>
+          <div class="card">
+            <div class="card-header">ABOUT</div>
+            <div class="card-body">
+              Hi, I'm Mashiat Hasin Rodoshi. I'm a recent CSE graduate from BRAC University and am open to work. I've been
+              very interested in web development since high school and had spent a lot of time fiddling with basic HTML and
+              CSS. I've come a long way since then, learning more frameworks and languages. However, designing the layout
+              for webpages is my favorite part of web designing.
+              <br><br>
+              I'm also very interested in game development, being an active member of the RPG Maker community since 2017. I
+              have been contributing to the RPG Maker forums with my knowledge ever since.
+              <br><br>
+              I'm very eager to learn new things and I always work hard
+              to accomplish my goals. Check out my CV to learn more! 
+              <br><br>
+              <button class="cv-button" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                aria-expanded="false" aria-controls="multiCollapseExample1">View CV</button>
+              <div class="collapse multi-collapse mt-3" id="multiCollapseExample1">
+                <div class="card card-body">
+                  <iframe
+                    src="https://www.dropbox.com/scl/fi/qxsfjpqc1h6iunddtdnwb/Mashiat-Hasin-Rodoshi-CV.pdf?rlkey=wxx0yflgpszs2c3849i8aob56&raw=1&navpanes=0&scrollbar=0"
+                    style="width:100%; height:700px;" frameborder="0"></iframe>
+                </div>
+              </div>
+    
+            </div>
+          </div>`
+        break;
+    case 'portfolio':
+      var div = document.getElementsByClassName('contents')
+      div[0].innerHTML = `
+      <div id="posts-container"></div>
+          <div class="card">
+            <div class="card-header">PROJECTS</div>
+            <div class="card-body">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Hospital Resources</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Bookarium</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">MangaPull</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                  tabindex="0">
+                  <div class="image-container mt-3"><img class="badges"
+                      src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&amp;logo=php&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white">
+                  </div>
+                  <b style="color: var(--bullet)">Healthcare Resources</b> is a web application that can track, reserve,
+                  and manage hospital beds in real time
+                  for multiple hospitals. Based on the user's search parameters, the program can also provide the relevant
+                  information such as list of hospitals in a specific area, its doctors, their visiting hours, fees and the
+                  hospitals diagnostic facilities. Users are also able to book doctors’ appointment for their convenience.
+                  <br><br>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg><b style="color: var(--bullet)">Login and Sign Up</b>
+                  <ul>
+                    <li>Sign Up with NID</li>
+                    <li>Login with NID and password</li>
+                  </ul>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg><b style="color: var(--bullet)">Hospital and Bed related features</b>
+                  <ul>
+                    <li>View hospitals in specific Location or in nearby area by sharing their location</li>
+                    <li>Filter hospitals by available bed</li>
+                    <li>View number of available beds for each hospital</li>
+                    <li>Reserve bed</li>
+                  </ul>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg><b style="color: var(--bullet)">Doctor related features</b>
+                  <ul>
+                    <li>View all doctors in specific area or nearby doctors by sharing their location</li>
+                    <li>Search for doctor department-wise and hospital-wise</li>
+                    <li>View Doctors' visiting hours and fee</li>
+                    <li>Book doctors' appointment</li>
+                    <li>Edit/Cancel appointment</li>
+                  </ul>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg><b style="color: var(--bullet)">Diagnostic related features</b>
+                  <ul>
+                    <li>Search nearby Diagnostic Centers</li>
+                    <li>Search Diagnostic centers by specific tests, Location-wise and Hospital-wise</li>
+                    <li>See available Tests and fee for every Diagnostic center</li>
+                    <li>Reserve Tests and Edit/Cancel them</li>
+                  </ul>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg><b style="color: var(--bullet)">Admin related features</b>
+                  <ul>
+                    <li>Every Hospital/Diagnostic Center will have one or multiple operators</li>
+                    <li>Operators can Register by a unique ID which will be provided by Admin Panel</li>
+                    <li>Operators can Log in by their Unique ID and Password</li>
+                    <li>Operators can Add/Edit their own center-based data</li>
+                  </ul>
+    
+                  <a href="https://github.com/MasiatHasin/Healthcare-Resources"><button class="cv-button">View on Github
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                      </svg></button></a>
+    
+                </div>
+    
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <style></style>
+                  <div class="image-container mt-3"><img class="badges"
+                      src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&amp;logo=php&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&amp;logo=laravel&amp;logoColor=white"
+                      height="24px;">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&amp;logo=bootstrap&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white">
+                  </div>
+                  <b style="color: var(--bullet)">Bookarium</b> is a website based on the MVC framework that serves as an
+                  online bookstore. It features a
+                  thorough search and filter system, user panel, cart system, review system and admin panel.
+                  <br><br>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  <b style="color: var(--bullet)">Filter and sort books</b>
+                  <ul>
+                    <li>Filter by genre</li>
+                    <li>Filter by date of publishing</li>
+                    <li>Sort by rating</li>
+                    <li>Sort by popularity</li>
+                  </ul>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  <b style="color: var(--bullet)">Book details</b>
+                  <ul>
+                    <li>Show author and synopsis</li>
+                    <li>Show price</li>
+                    <li>Show rating</li>
+                    <li>Show similar books</li>
+                  </ul>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  <b style="color: var(--bullet)">Cart system</b>
+                  <ul>
+                    <li>Add books to cart</li>
+                    <li>Remove books from cart</li>
+                    <li>Empty cart if paid</li>
+                    <li>Display total charge</li>
+                  </ul>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  <b style="color: var(--bullet)">Review system</b>
+                  <ul>
+                    <li>If purchased, reviews can be written</li>
+                    <li>If purchased, books can be rated</li>
+                    <li>Post review</li>
+                    <li>Edit or delete review</li>
+                  </ul>
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  <b style="color: var(--bullet)">Review system</b>
+                  <ul>
+                    <li>Edit book details</li>
+                  </ul>
+    
+                  <a href="https://github.com/MasiatHasin/Bookarium"><button class="cv-button">View on Github <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                      </svg></button></a>
+    
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                  <div class="image-container mt-3">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&amp;logo=node.js&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&amp;logo=express&amp;logoColor=%2361DAFB">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&amp;logo=bootstrap&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white">
+                    <img class="badges"
+                      src="https://img.shields.io/badge/Pug-gray?style=for-the-badge&amp;logo=pug&amp;logoColor=white">
+                  </div>
+    
+                  MangaPull is a desktop app to download manga from the MangaDex website using their API. Users can
+                  download
+                  multiple chapters as raw images, PDF or CBZ formats.
+                  <br><br>
+                  <ul>
+                    <li>Find manga using MangaDex URL</li>
+                    <li>Download multiple chapters together</li>
+                    <li>Select output file format from CBZ, PDF or Raw images</li>
+                    <li>Select image quality from High, Medium and Low</li>
+                  </ul>
+    
+                  <a href="https://github.com/MasiatHasin/MangaPull"><button class="cv-button">View on Github <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                      </svg></button></a>
+    
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <div class="card mt-3">
+            <div class="card-header">RESEARCH</div>
+            <div class="card-body">
+              <div class="image-container mt-3">
+                <img class="badges2" src="https://img.shields.io/badge/Machine Learning-%23777BB4.svg">
+                <img class="badges2" src="https://img.shields.io/badge/Natural Language Processing-%23323330.svg">
+                <img class="badges2" src="https://img.shields.io/badge/Image processing-%23E34F26.svg">
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bullet)"
+                class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path
+                  d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg><b style="color: var(--bullet)">Automated image caption generator in Bangla using
+                multimodal learning</b>
+              <br>
+              Along with my fellow thesis groupmates, I have conducted research to develop a highly accurate multimodal
+              learning-based Bangla caption generator creates closed captions in the language for digital photos
+              automatically. Using neural networks, the generator will be able to recognize various items in the image,
+              relationships between the objects, and actions taking place in the image. It can create a detailed,
+              information-rich caption for the image by combining the data gathered.
+            </div>
+          </div>
+    
+          <div class="card mt-3">
+            <div class="card-header">COURSEWORKS</div>
+            <div class="card-body">
+              I have organized and preserved my solutions to the assignments and lab tasks of some of the courses I
+              completed in BRAC University in hopes that they might help my juniors. These are also proof of my hardwork
+              and
+              dedication throughout my university life. 
+              <br>
+              <div class="image-container mt-3">
+                <a href="https://github.com/MasiatHasin/CSE221-Algorithms-Lab-Summer2023"><button class="cv-button">CSE221 -
+                    Algorithms</button></a>
+                <a href="https://github.com/MasiatHasin/CSE331-Fall2022"><button class="cv-button">CSE331 - Automata and
+                    computability</button></a>
+                <a href="https://github.com/MasiatHasin/CSE422-AI-Lab-Summer2022"><button class="cv-button">CSE422 -
+                    Artificial Intelligence</button></a>
+                <a href="https://github.com/MasiatHasin/CSE423-ComputerGraphics-Lab-Spring2022"><button
+                    class="cv-button">CSE423 - Computer Graphics</button></a>
+                <a href="https://github.com/MasiatHasin/CSE460-VLSI-Lab-Fall2022"><button class="cv-button">CSE460 -
+                    VLSI</button></a>
+              </div>
+    
+            </div>
+          </div>`
+        break;
+    default:
+        // Code for unknown page or a default case
+        break;
+}
 
-    const scrollToTop = () => {
-        button.addEventListener("click", () => {
-            console.log('Button clicked');
-            scrollingColumn.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    };
 
-    displayButton();
-    scrollToTop();
-});
-
-
-const button = document.querySelector('.totop');
-console.log(button);
-
-const displayButton = () => {
-  window.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-  
-    if (window.scrollY > 100) {
-      button.style.display = "block";
-    } else {
-      button.style.display = "none";
-    }
-  });
-};
-
-const scrollToTop = () => {
-  button.addEventListener("click", () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    }); 
-    console.log(event);
-  });
-};
-
-displayButton();
-scrollToTop();
