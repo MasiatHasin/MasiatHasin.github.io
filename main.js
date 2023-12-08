@@ -90,24 +90,24 @@ const currentUrl = window.location.pathname;
 let page;
 
 switch (true) {
-    case currentUrl.includes('home'):
-        page = 'home';
-        break;
-    case currentUrl.includes('about'):
-        page = 'about';
-        break;
-    case currentUrl.includes('portfolio'):
-        page = 'portfolio';
-        break;
-    default:
-        page = 'unknown';
-        break;
+  case currentUrl.includes('home'):
+    page = 'home';
+    break;
+  case currentUrl.includes('about'):
+    page = 'about';
+    break;
+  case currentUrl.includes('portfolio'):
+    page = 'portfolio';
+    break;
+  default:
+    page = 'unknown';
+    break;
 }
 
 switch (page) {
-    case 'home':
-      var div = document.getElementsByClassName('contents')
-      div[0].innerHTML = `
+  case 'home':
+    var div = document.getElementsByClassName('contents')
+    div[0].innerHTML = `
       <div id="posts-container"></div>
       <div class="card">
         <div class="card-header">NEWS</div>
@@ -157,10 +157,10 @@ switch (page) {
         </div>
       </div>
     </div>`
-        break;
-    case 'about':
-      var div = document.getElementsByClassName('contents')
-      div[0].innerHTML = `
+    break;
+  case 'about':
+    var div = document.getElementsByClassName('contents')
+    div[0].innerHTML = `
       <div id="posts-container"></div>
           <div class="card">
             <div class="card-header">ABOUT</div>
@@ -185,13 +185,121 @@ switch (page) {
                     style="width:100%; height:700px;" frameborder="0"></iframe>
                 </div>
               </div>
-    
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mt-3">
+            <div class="card-header">EDUCATION</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-11">
+                  <table class="table table-responsive" style="text-align: center">
+                    <thead>
+                      <tr>
+                        <th>Institution</th>
+                        <th>Certificate/Degree</th>
+                        <th>Year</th>
+                        <th>GPA/CGPA</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="w-25">BRAC University</td>
+                        <td class="w-25 align-middle">BSc in CSE</td>
+                        <td class="w-25 align-middle">2019 - 2023</td>
+                        <td class="w-25 align-middle"><div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">3.8/4.0</div>
+                      </div></td>
+                      </tr>
+                      <tr>
+                        <td>Birshreshtha Noor Mohammad Public College</td>
+                        <td class="w-25 align-middle">HSC</td>
+                        <td class="w-25 align-middle">2019</td>
+                        <td class="w-25 align-middle"><div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5.0/5.0</div>
+                      </div></td>
+                      </tr>
+                      <tr>
+                        <td class="w-25">Mohammadpur Preparatory School & College</td>
+                        <td class="w-25 align-middle">SSC</td>
+                        <td class="w-25 align-middle">2017</td>
+                        <td class="w-25 align-middle"><div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5.0/5.0</div>
+                      </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="card mt-3">
+            <div class="card-header">SKILLS</div>
+            <div class="card-body">
+            📋 Languages
+            <div class="image-container">
+            <img class="badges"
+            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+            <img class="badges"
+                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E">
+                <img class="badges"
+            src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
+              <img class="badges"
+                src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&amp;logo=php&amp;logoColor=white">
+                <img class="badges"
+                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white">
+              <img class="badges"
+                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white">
+                <img class="badges"
+                src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white">
+            </div>
+            <br>
+
+            📚 Frameworks, Platforms and Libraries
+            <div class="image-container">
+            <img class="badges"
+            src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white">
+            <img class="badges"
+            src=" https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB">
+            <img class="badges"
+                src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white">
+                <img class="badges"
+                src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">
+                <img class="badges"
+                src="https://img.shields.io/badge/Pug-silver?style=for-the-badge&logo=pug&logoColor=A86454">
+            </div>
+            <br>
+            💾 Databases
+            <div class="image-container">
+            <img class="badges"
+                src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white">
+            
+            </div>
+            <br>
+            🕓 Version Control
+            <div class="image-container">
+            <img class="badges"
+                src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+            
+            </div>
+
+            <br>
+            🏢 Office
+            <div class="image-container">
+            <img class="badges"
+                src="https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white">
+            
+            </div>
+
             </div>
           </div>`
-        break;
-    case 'portfolio':
-      var div = document.getElementsByClassName('contents')
-      div[0].innerHTML = `
+    break;
+  case 'portfolio':
+    var div = document.getElementsByClassName('contents')
+    div[0].innerHTML = `
       <div id="posts-container"></div>
           <div class="card">
             <div class="card-header">PROJECTS</div>
@@ -478,10 +586,10 @@ switch (page) {
     
             </div>
           </div>`
-        break;
-    default:
-        // Code for unknown page or a default case
-        break;
+    break;
+  default:
+    // Code for unknown page or a default case
+    break;
 }
 
 
